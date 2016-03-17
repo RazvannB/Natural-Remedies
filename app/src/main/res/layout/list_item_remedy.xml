@@ -1,10 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="wrap_content"
-    android:minHeight="?android:attr/listPreferredItemHeight"
-    android:gravity="center_vertical"
-    android:textColor="@color/customGreen"
-    android:textSize="@dimen/customSize"
-    android:id="@+id/list_item_remedy_textview">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="90dp"
+    android:orientation="horizontal">
 
-</TextView>
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/customGreen"/>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp">
+
+            <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent" android:layout_height="35dp"
+                android:minHeight="?android:attr/listPreferredItemHeight"
+                android:textColor="@color/customGreen"
+                android:textSize="@dimen/customSize"
+                android:id="@+id/list_item_remedy_textview">
+            </TextView>
+
+            <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent" android:layout_height="35dp"
+                android:minHeight="?android:attr/listPreferredItemHeight"
+                android:textColor="@color/customGreen"
+                android:textSize="@dimen/customSize"
+                android:text="Test">
+            </TextView>
+
+        </LinearLayout>
+
+</LinearLayout>
